@@ -1,6 +1,6 @@
-/*
 
-color manager volé au projet artball
+
+//color manager volé au projet artball
 
 class ColorManager{
   
@@ -35,5 +35,3 @@ class ColorManager{
     ArrayList<Integer> colorList;
 
 };
-
-*/
