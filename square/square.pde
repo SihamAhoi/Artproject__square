@@ -1,9 +1,25 @@
 
+
+class Carré {
+  
+}
+
+size(1000,1000,P3D);
+background (0);
+translate(500, 500, 500); 
+rotateY(0.5);
+rotateX(0.5);
+fill(50, 50, 255, 100);
+stroke(0, 0, 255);
+box(100,100,100);
+
+
+
+/*
 int vitesse1 = 0;
 int vitesse2 = 0;
 
 void setup() { 
-  println("coucou");
   size(701, 701);
   fill(0);
 
@@ -45,3 +61,5 @@ void draw() {
   mesSquares();
 
 }
+
+*/
