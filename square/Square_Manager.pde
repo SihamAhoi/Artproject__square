@@ -14,7 +14,7 @@ class Square_Manager{
   }
   
   void createNewSquare() {
-    squares.add(new carre(100, 100, 200, colorManager.getRandomColor()));
+    squares.add(new Carre(100, 100, 200, colorManager.getRandomColor()));
   } 
     
   void process() {
@@ -24,6 +24,7 @@ class Square_Manager{
       c.draw();
     }
     
+  }
     
     int maxSize = 100;
     ArrayList<Carre> squares;

@@ -8,11 +8,11 @@ void setup() {
   
 void draw() {
   background (0);
-  square_Manager.process();
+  square_manager.process();
 }
 
 void mousePressed(){
   
-  square_Manager.createNewSquare();
+  square_manager.createNewSquare();
   
 }
