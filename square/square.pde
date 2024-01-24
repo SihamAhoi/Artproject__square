@@ -1,10 +1,12 @@
 
 
 
-class Carre {
+class Cube {
   
-   Carre(color inColor){
+   Cube(int inX, int inY, color inColor){
 
+    positionX = inX;
+    positionY = inY;
     rotationX = 0;
     rotationY = 0;
     rotationZ = 50;
@@ -29,7 +31,8 @@ class Carre {
   float rotationX;
   float rotationY;
   float rotationZ;
-  
+  int positionX;
+  int positionY;
 };
 
 

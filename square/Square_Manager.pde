@@ -8,19 +8,19 @@ le carré tourne sur lui même - square manager
 class Square_Manager{
   
   Square_Manager(){
-    squares = new ArrayList<Carre>();
+    squares = new ArrayList<Cube>();
     
     colorManager = new ColorManager();
   }
   
   void createNewSquare() {
-    squares.add(new Carre(colorManager.getRandomColor()));
+    squares.add(new Cube(mouseX, mouseY, colorManager.getRandomColor()));
   } 
     
   void process() {
     
     for(int i = 0; i < squares.size(); i++) {
-      Carre c = squares.get(i);
+      Cube c = squares.get(i);
       c.rotationX = c.rotationX + 0.03;
       c.rotationY = c.rotationY + 0.03;
       
@@ -31,7 +31,7 @@ class Square_Manager{
   }
     
  
-    ArrayList<Carre> squares;
+    ArrayList<Cube> squares;
     ColorManager colorManager;
   
   
