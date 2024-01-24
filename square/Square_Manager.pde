@@ -14,19 +14,23 @@ class Square_Manager{
   }
   
   void createNewSquare() {
-    squares.add(new Carre(100, 100, 200, colorManager.getRandomColor()));
+    squares.add(new Carre(colorManager.getRandomColor()));
   } 
     
   void process() {
     
     for(int i = 0; i < squares.size(); i++) {
       Carre c = squares.get(i);
+      c.rotationX = c.rotationX + 0.03;
+      c.rotationY = c.rotationY + 0.03;
+      
+      
       c.draw();
     }
     
   }
     
-    int maxSize = 100;
+ 
     ArrayList<Carre> squares;
     ColorManager colorManager;
   

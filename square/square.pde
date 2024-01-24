@@ -3,30 +3,33 @@
 
 class Carre {
   
-   Carre(int inX, int inY, int inZ, color inColor){
-     
-  
-    positionX = inX;
-    positionY = inY;
-    positionZ = inZ;
+   Carre(color inColor){
+
+    rotationX = 0;
+    rotationY = 0;
+    rotationZ = 50;
     maCouleur = inColor;
     
   }
  
  void draw() {
- 
-   translate(500, 500, 500); 
-   rotateY(0.5);
-   rotateX(0.5);
-   fill(50, 50, 255, 100);
-   stroke(0, 0, 255);
+   pushMatrix();
+   translate(width/2, height/2, 500); 
+   rotateX(rotationX);
+   rotateY(rotationY);
+   rotateZ(rotationZ);
+   fill(maCouleur, 100);
+   stroke(maCouleur);
    box(100,100,100);
+   popMatrix();
  }
  
-  int positionX;
-  int positionY;
-  int positionZ;
+ //ci-dessous on appel ça des membres
   color maCouleur;
+  float rotationX;
+  float rotationY;
+  float rotationZ;
+  
 };
 
 
