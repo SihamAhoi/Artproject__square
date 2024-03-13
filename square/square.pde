@@ -16,13 +16,14 @@ class Cube {
  
  void draw() {
    pushMatrix();
-   translate(width/2, height/2, 500); 
+   translate(mouseX, mouseY, 0);
+   //translate(width/2, height/2, 500); 
    rotateX(rotationX);
    rotateY(rotationY);
    rotateZ(rotationZ);
    fill(maCouleur, 100);
    stroke(maCouleur);
-   box(100,100,100);
+   box(100);
    popMatrix();
  }
  
